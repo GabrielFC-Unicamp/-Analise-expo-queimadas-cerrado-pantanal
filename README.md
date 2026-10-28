@@ -35,7 +35,7 @@ Subperguntas (cada uma vira uma seção da história):
 
 1. **Volume:** quantos focos cada bioma teve por ano? (comparar também normalizado por área)
 2. **Sazonalidade:** em que meses cada bioma queima? Os picos coincidem?
-3. **Anos atípicos:** o que foi diferente em 2020 (Pantanal) e nos anos mais críticos?
+3. **Anos atípicos:** o que foi diferente em 2020 (Pantanal) e nos demais anos do período?
 4. **Clima:** como dias sem chuva, umidade e temperatura se relacionam com os focos em cada bioma?
 5. **Intensidade:** a potência do fogo (FRP) é semelhante nos dois biomas?
 6. **Limitações:** o que o clima não explica (causas humanas, cobertura de estações).
@@ -46,7 +46,7 @@ Subperguntas (cada uma vira uma seção da história):
 |---|---|
 | Tipo de trabalho | Análise exploratória (EDA) com narrativa, sem modelagem preditiva |
 | Biomas | Pantanal e Cerrado |
-| Período | **[fechar com a dupla: 2020–2023 ou 2020–2024]**. O planejamento original era 2020–2024, mas o INMET foi processado até 2023. Os dois conjuntos precisam usar o mesmo período. |
+| Período | **2020 a 2023** (o planejamento inicial incluía 2024, que ficou fora para os dois conjuntos de dados) |
 | Ferramentas | Python (pandas, geopandas, matplotlib/seaborn), Google Colab, GitHub |
 | Bioma de cada foco | O do próprio foco (campo `Bioma` do INPE), não o da estação |
 | Raio de associação foco-estação | 100 km como principal; 50 km como teste de sensibilidade |
@@ -56,7 +56,7 @@ Subperguntas (cada uma vira uma seção da história):
 | Etapa | Notebook | Responsável | Status |
 |---|---|---|---|
 | Coleta e limpeza INPE | `01_coleta_limpeza_inpe` | [colega] | [a fazer] |
-| Coleta e limpeza INMET | `02_coleta_limpeza_inmet` | Gabriel | ✅ pronto (2020–2023) |
+| Coleta e limpeza INMET | `02_coleta_limpeza_inmet` | Gabriel | ✅ pronto |
 | Junção espacial foco × estação | `03_juncao_espacial` | Ambos | a fazer |
 | EDA Pantanal | `04_eda_pantanal` | [definir] | a fazer |
 | EDA Cerrado | `05_eda_cerrado` | [definir] | a fazer |
@@ -66,7 +66,7 @@ Subperguntas (cada uma vira uma seção da história):
 
 ### Focos de calor: INPE (BDQueimadas)
 - Portal: https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/
-- Filtros: bioma = Pantanal e Cerrado · período = **[definir]**
+- Filtros: bioma = Pantanal e Cerrado · período = 01/01/2020 a 31/12/2023
 - Satélite de referência: **[definir, para a série ser comparável ao longo dos anos]**
 - Colunas desejadas: data, latitude, longitude, bioma, estado, município, dias sem chuva, risco de fogo, precipitação, FRP
 - Horário em UTC (por isso o INMET também é tratado em UTC)
@@ -210,16 +210,15 @@ queimadas-pantanal-cerrado/
 | 27/10/2026 | `-9999` vira `NaN`, sem preencher com 0 | Chuva 0 mm é diferente de sem dado |
 | 27/10/2026 | Estações a até 100 km dos biomas | Compensa a baixa densidade de estações, principalmente no Pantanal |
 | 27/10/2026 | Limites dos biomas do IBGE 2025 (1:250.000) | Fonte oficial |
-| [definir] | Período final (2020–2023 ou 2020–2024) | [fechar com a dupla] |
+| 28/10/2026 | Período final: 2020 a 2023 | Alinha com o INMET já processado; 2024 fica fora |
 
-Detalhes e novas decisões em [`docs/decisoes.md`](docs/decisoes.md).
+
 
 ## 12. Autores e referências
 
 **Autores**
 - Gabriel Fernandes Carvalho ([@carvalhoo-gb](https://github.com/carvalhoo-gb))
-- [Nome do colega]
-
+- Matheus Souza Bueno de Camargo ([@Matheusdev29](https://github.com/Matheusdev29))
 **Referências**
 - INPE, BDQueimadas: https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/
 - INMET, Dados Históricos: https://portal.inmet.gov.br/dadoshistoricos
