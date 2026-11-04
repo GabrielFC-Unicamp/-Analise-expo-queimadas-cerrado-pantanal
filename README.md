@@ -6,7 +6,7 @@ Análise exploratória que cruza focos de calor (INPE) com dados meteorológicos
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue) ![Colab](https://img.shields.io/badge/Google-Colab-orange) ![Status](https://img.shields.io/badge/status-em%20andamento-yellow)
 
-> Trabalho em dupla · Unicamp · Entrega: **[definir: 13/11 ou 27/11]**
+> Trabalho em trio · Unicamp · Entrega:27/11
 
 ---
 
@@ -46,7 +46,7 @@ Subperguntas (cada uma vira uma seção da história):
 |---|---|
 | Tipo de trabalho | Análise exploratória (EDA) com narrativa, sem modelagem preditiva |
 | Biomas | Pantanal e Cerrado |
-| Período | **2020 a 2023** (o planejamento inicial incluía 2024, que ficou fora para os dois conjuntos de dados) |
+| Período | **2020 a 2023** |
 | Ferramentas | Python (pandas, geopandas, matplotlib/seaborn), Google Colab, GitHub |
 | Bioma de cada foco | O do próprio foco (campo `Bioma` do INPE), não o da estação |
 | Raio de associação foco-estação | 100 km como principal; 50 km como teste de sensibilidade |
@@ -219,6 +219,8 @@ queimadas-pantanal-cerrado/
 **Autores**
 - Gabriel Fernandes Carvalho ([@carvalhoo-gb](https://github.com/carvalhoo-gb))
 - Matheus Souza Bueno de Camargo ([@Matheusdev29](https://github.com/Matheusdev29))
+- Maria Laura ([@malutavarexx-tech](https://github.com/malutavarexx-tech))
+  
 **Referências**
 - INPE, BDQueimadas: https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/
 - INMET, Dados Históricos: https://portal.inmet.gov.br/dadoshistoricos
