@@ -219,7 +219,7 @@ queimadas-pantanal-cerrado/
 **Autores**
 - Gabriel Fernandes Carvalho ([@carvalhoo-gb](https://github.com/carvalhoo-gb))
 - Matheus Souza Bueno de Camargo ([@Matheusdev29](https://github.com/Matheusdev29))
-- Maria Laura ([@malutavarexx-tech](https://github.com/malutavarexx-tech))
+- Maria Luiza ([@malutavarexx-tech](https://github.com/malutavarexx-tech))
   
 **Referências**
 - INPE, BDQueimadas: https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/
