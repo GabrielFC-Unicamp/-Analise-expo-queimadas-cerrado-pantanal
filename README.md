@@ -59,12 +59,12 @@ Subperguntas (cada uma vira uma seção da história):
 
 | Etapa | Notebook | Responsável | Status |
 |---|---|---|---|
-| Coleta e limpeza INPE | `01_coleta_limpeza_inpe` | [definir] | em ajustes finais |
+| Coleta e limpeza INPE | `01_coleta_limpeza_inpe` | Matheus |✅ pronto |
 | Coleta e limpeza INMET | `02_coleta_limpeza_inmet` | Gabriel | ✅ pronto |
-| Junção espacial foco × estação | `03_juncao_espacial` | Gabriel | a fazer (próximo) |
-| EDA Pantanal | `04_eda_pantanal` | [definir] | a fazer |
-| EDA Cerrado | `05_eda_cerrado` | [definir] | a fazer |
-| Comparação e narrativa | `06_comparacao_e_historia` | Todos | a fazer |
+| Junção espacial foco × estação | `03_juncao_espacial` | Gabriel |✅ pronto|
+| EDA Pantanal | `04_eda_pantanal` | Malu | ✅ pronto |
+| EDA Cerrado | `05_eda_cerrado` | Malu | ✅ pronto |
+| Comparação e narrativa | `06_comparacao_e_historia` | Todos | ✅ pronto |
 
 As subperguntas 1, 2, 3 e 5 (volume, sazonalidade, anos atípicos e FRP) usam **só os focos do INPE** e podem começar antes da junção. A subpergunta 4 (clima × fogo) depende do notebook 03.
 
